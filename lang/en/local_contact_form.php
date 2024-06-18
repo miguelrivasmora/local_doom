@@ -17,7 +17,7 @@
 /**
  * Plugin strings are defined here.
  *
- * @package     local_contact_form
+ * @package     local_doom
  * @category    string
  * @copyright   2024 ADSDR-FUNIBER Scepter Team
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -25,30 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Contact form';
-$string['area'] = 'Formative Area';
-$string['message'] = 'Message';
-$string['send'] = 'Send';
-$string['cancel'] = 'Cancel';
-$string['personal_data'] = 'Personal data to be sent';
-$string['username'] = 'Username';
-$string['firstname'] = 'First Name';
-$string['lastname'] = 'Last Name';
-$string['email'] = 'Email Address';
-$string['information'] = 'Please, enter the following information:';
-$string['noareas'] = 'No areas available';
-$string['messagesent'] = 'Message sent successfully!';
-$string['requiredmessage'] = 'This field is required.';
+$string['pluginname'] = 'Doom';
 
-$string['category'] = 'Display category';
-$string['category_help'] = 'Select the category to display in the contact form';
-
-$string['program_url'] = 'Program URL';
-$string['program_url_help'] = 'Enter the URL of the service that will receive the program data';
-
-$string['subject'] = 'Letters to the editor - Area: ';
-$string['success'] = 'Email successfully sent to user ID: {$a}.';
-$string['failed'] = 'Could not send email to user ID: {$a}.';
-$string['welcome'] = 'Dear teacher, as area coordinator you have received a message from student {$a}: ';
-
-$string['menutext'] = 'Doom';
+$string['menutext'] = 'DOOM';

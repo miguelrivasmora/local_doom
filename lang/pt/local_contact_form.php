@@ -17,7 +17,7 @@
 /**
  * Plugin strings are defined here.
  *
- * @package     local_contact_form
+ * @package     local_doom
  * @category    string
  * @copyright   2024 ADSDR-FUNIBER Scepter Team
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -25,30 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Formulário de contato';
-$string['area'] = 'Área Formativa';
-$string['message'] = 'Mensagem';
-$string['send'] = 'Enviar';
-$string['cancel'] = 'Cancelar';
-$string['personal_data'] = 'Dados pessoais a serem enviados';
-$string['username'] = 'Nome de usuário';
-$string['firstname'] = 'Nomes';
-$string['lastname'] = 'Sobrenomes';
-$string['email'] = 'Endereço de email';
-$string['information'] = 'Por favor, insira a seguinte informação:';
-$string['noareas'] = 'Nenhuma área disponível';
-$string['messagesent'] = 'Mensagem enviada com sucesso!';
-$string['requiredmessage'] = 'Este campo é obrigatório.';
+$string['pluginname'] = 'Doom';
 
-$string['category'] = 'Categoria de exibição';
-$string['category_help'] = 'Selecione a categoria a ser exibida no formulário de contato';
-
-$string['program_url'] = 'URL do programa';
-$string['program_url_help'] = 'Insira a URL do serviço que receberá os dados do programa';
-
-$string['subject'] = 'Cartas ao editor - Área: ';
-$string['success'] = 'E-mail enviado com sucesso para ID do usuário: {$a}.';
-$string['failed'] = 'Não foi possível enviar e-mail para o ID do usuário: {$a}.';
-$string['welcome'] = 'Prezado professor, como coordenador de área você recebeu uma mensagem do aluno {$a}: ';
-
-$string['menutext'] = 'Enviar para o coordenador da área';
+$string['menutext'] = 'DOOM';
