@@ -33,10 +33,9 @@ echo     '<script type="text/javascript">';
 echo       'var dosbox = new Dosbox({';
 echo         'id: "dosbox",';
 echo         'onload: function (dosbox) {';
-echo           'dosbox.run("https://js-dos.com/cdn/upload/DOOM-@evilution.zip", "./DOOM");';
+echo           'dosbox.run("./game/DOOM-@evilution.zip", "./DOOM");'; //https://js-dos.com/cdn/upload/DOOM-@evilution.zip
 echo         '},';
 echo         'onrun: function (dosbox, app) {';
-echo           'dosbox.command("doom");';
 echo           'console.log("App \'" + app + "\' is runned")';
 echo         '}';
 echo       '});';
