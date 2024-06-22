@@ -11,37 +11,51 @@ $PAGE->set_heading('DOOM Game');
 
 // Cabecera HTML
 echo $OUTPUT->header();
+?>
 
-// Contenido principal
-echo '<!doctype html>';
-echo '<html lang="en-us">';
-echo   '<head>';
-echo     '<meta charset="utf-8">';
-echo     '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
-echo     '<title>DOOM</title>';
-echo     '<style type="text/css">';
-echo       '.dosbox-container { width: 320px; height: 200px; }';
-echo       '.dosbox-container > .dosbox-overlay { background: url(https://js-dos.com/cdn/DOOM.png); }';
-echo     '</style>';
-echo   '</head>';
-echo   '<body>';
-echo     '<div id="dosbox"></div>';
-echo     '<br/>';
-echo     '<button onclick="dosbox.requestFullScreen();">Make fullscreen</button>';
-echo     '<script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>';
-echo     '<script type="text/javascript">';
-echo       'var dosbox = new Dosbox({';
-echo         'id: "dosbox",';
-echo         'onload: function (dosbox) {';
-echo           'dosbox.run("./game/DOOM-@evilution.zip", "./DOOM");'; //https://js-dos.com/cdn/upload/DOOM-@evilution.zip
-echo         '},';
-echo         'onrun: function (dosbox, app) {';
-echo           'console.log("App \'" + app + "\' is runned")';
-echo         '}';
-echo       '});';
-echo     '</script>';
-echo   '</body>';
-echo '</html>';
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DOOM</title>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dosbox-container {
+            width: 640px;
+            height: 400px;
+        }
+        .dosbox-container > .dosbox-overlay {
+            background: url(https://js-dos.com/cdn/DOOM.png);
+        }
+    </style>
+</head>
+<body>
+    <div id="dosbox" class="dosbox-container"></div>
+    <br/>
+    <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
+    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <script type="text/javascript">
+        var dosbox = new Dosbox({
+            id: "dosbox",
+            onload: function (dosbox) {
+                dosbox.run("./game/DOOM-@evilution.zip", "./DOOM");
+            },
+            onrun: function (dosbox, app) {
+                console.log("App '" + app + "' is runned");
+            }
+        });
+    </script>
+</body>
+</html>
 
+<?php
 // Pie de página
 echo $OUTPUT->footer();
+?>
