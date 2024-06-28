@@ -18,7 +18,7 @@
  * Plugin version and other meta-data are defined here.
  *
  * @package     local_doom
- * @copyright   2024 ADSDR-FUNIBER Scepter Team
+ * @copyright   2024
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
